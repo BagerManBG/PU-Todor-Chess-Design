@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorAccent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/border"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txvMainMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="0dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/main_menu"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/colorBlack"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btnNewGame"
+            android:layout_width="294dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txvMainMenu"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/button"
+            android:textColor="@color/colorWhite"
+            android:text="@string/new_game" />
+
+        <Button
+            android:id="@+id/btnContinueGame"
+            android:layout_width="294dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnNewGame"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/button"
+            android:textColor="@color/colorWhite"
+            android:text="@string/continue_game" />
+
+        <Button
+            android:id="@+id/btnSaveGame"
+            android:layout_width="294dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnContinueGame"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/button"
+            android:textColor="@color/colorWhite"
+            android:text="@string/save_game" />
+
+        <ImageView
+            android:id="@+id/ivChessImage"
+            android:layout_width="314dp"
+            android:layout_height="176dp"
+            android:layout_below="@+id/btnSaveGame"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="30dp"
+            android:background="@mipmap/ic_chess_foreground"
+            android:contentDescription="@string/chess_image"
+            tools:background="@mipmap/ic_chess_foreground" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

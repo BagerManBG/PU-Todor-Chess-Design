@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Chess Design</string>
+    <string name="new_game">Нова игра</string>
+    <string name="save_game">Запази игра</string>
+    <string name="continue_game">Продължи стара игра</string>
+    <string name="main_menu">ГЛАВНО МЕНЮ</string>
+    <string name="chess_image">Chess image</string>
+    <string name="player_turn">Белият играч е на ход</string>
+    <string name="undo">Ход назад</string>
+    <string name="go_to_menu">Към меню</string>
+</resources>
